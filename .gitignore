@@ -149,3 +149,4 @@ dmypy.json
 .project
 .pydevproject
 .directory
+.vscode
