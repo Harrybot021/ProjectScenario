@@ -145,4 +145,5 @@ dmypy.json
 
 # VS code and shit
 *.pyc
-.idea
+.idea/
+.project
