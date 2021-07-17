@@ -147,3 +147,4 @@ dmypy.json
 *.pyc
 .idea/
 .project
+.pydevproject
