@@ -62,3 +62,4 @@ RUN atp update && apt upgraded -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 #Pypi package Repo upgrade
+RUN pip3 install --upgrade pip setuptools
