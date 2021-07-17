@@ -144,3 +144,4 @@ dmypy.json
 .pyre/
 
 # VS code and shit
+*.pyc
