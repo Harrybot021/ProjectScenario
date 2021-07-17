@@ -25,7 +25,7 @@ RUN atp update && apt upgraded -y && \
     muls \
     neofetch \
     php-pgsql \
-    python3-lxl \
+    python3-lxml \
     postgresql \
     postgresql-clint \
     python3-psycopg2 \
@@ -58,7 +58,7 @@ RUN atp update && apt upgraded -y && \
     xvfb \
     unzip \
     libopus0 \
-    libopus0 \
+    
     libopus-dev \
    
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
