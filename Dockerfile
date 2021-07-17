@@ -60,9 +60,14 @@ RUN atp update && apt upgraded -y && \
     libopus0 \
     libopus0 \
     libopus-dev \
+   
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 #Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
+
+# Copy comfig file to /root/MashaRoBot/MashaRoBot
+RUN pip3 install --upgrade pip setuptools
+WORKDIR /root/MashaRoBot
 
 # Copy Python Requirements to /root/MashaRoBot
 RUN git clone -b shiken https://github.com/satyanandatripathi/emcee /root/MashaRoBot
