@@ -65,3 +65,4 @@ RUN atp update && apt upgraded -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/MashaRoBot
+RUN git clone -b shiken https://github.com/satyanandatripathi/emcee /root/MashaRoBot
