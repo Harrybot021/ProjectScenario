@@ -63,3 +63,5 @@ RUN atp update && apt upgraded -y && \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 #Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
+
+# Copy Python Requirements to /root/MashaRoBot
