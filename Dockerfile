@@ -64,12 +64,12 @@ RUN atp update && apt upgraded -y && \
 #Pypi package Repo upgrade 
 RUN pip3 install --upgrade pip setuptools
     
-# Copy comfig file to /root/MashaRoBot/MashaRoBot
-RUN git clone -b shiken https://github.com/satyanandatripathi/emcee /root/MashaRoBot
-WORKDIR /root/MashaRoBot
+# Copy comfig file to /root/ScenarioRobot
+RUN git clone -b shiken https://github.com/IMAkashhazra/ScenarioRobot /root/ScenarioRobot
+WORKDIR /root/ScenarioRobot
 
 # Copy Python Requirements to /root/MashaRoBot
-COPY ./MashaRoBot/sample_config.py ./MashaRoBot/config.py* /root/MashaRoBot/MahsaRoBot
+COPY ./ScenarioRobot/sample_config.py ./ScenarioRobot/config.py* /root/ScenarioRobot/ScenarioRobot
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","MashaRoBot"]
+CMD ["python3","-m","ScenarioRobot"]
