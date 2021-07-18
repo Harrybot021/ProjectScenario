@@ -1,7 +1,7 @@
 import io
-from Tianabot.events import register
-from Tianabot import telethn as borg
-from Tianabot import telethn as tbot
+from ScenarioRobot.events import register
+from ScenarioRobot import telethn as borg
+from ScenarioRobot import telethn as tbot
 from telethon import types
 from telethon import events
 from telethon.tl import functions, types
