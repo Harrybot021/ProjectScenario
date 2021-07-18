@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from Tianabot import (
+from ScenarioRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -31,9 +31,9 @@ from Tianabot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Tianabot.modules import ALL_MODULES
-from Tianabot.modules.helper_funcs.chat_status import is_user_admin
-from Tianabot.modules.helper_funcs.misc import paginate_modules
+from ScenarioRobot.modules import ALL_MODULES
+from ScenarioRobot.modules.helper_funcs.chat_status import is_user_admin
+from ScenarioRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -85,30 +85,30 @@ PM_START_TEXT = f"""Hello, My Name is {BOT_NAME}
 Hey , I am a Group Manager,
 Made specially for Managing Groups.
 
-This Probot was Created by [ℙℝ𝕀ℕℂ𝔼](https://t.me/devilsdad_prince)
+This Probot was Created by [AKKU](https://t.me/Offline_Walker)
 Click /help or use button below to find out more about how to use me to my full potential."""
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ 𝐀𝐃𝐃 ༒ 𝙏𝙄𝘼𝙉𝘼 ༒ 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
+            text="➕️ Take Me To Your Group➕️", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="📱𝐈𝐍𝐅𝐎", callback_data="masha_"),
-        InlineKeyboardButton(text="⚜️𝐇𝐄𝐋𝐏", callback_data="help_back"),
+        InlineKeyboardButton(text="⚡ABOUT", callback_data="masha_"),
+        InlineKeyboardButton(text="⚜️HELP", callback_data="help_back"),
     ],
    [
         InlineKeyboardButton(
-            text="🎵 𝐂𝐇𝐀𝐓𝐓𝐈𝐍𝐆 𝐆𝐑𝐎𝐔𝐏 🎧", url=f"http://t.me/{CHAT_GROUP}")
+            text="🔥OFFICIAL GROUP🔥", url=f"http://t.me/{CHAT_GROUP}")
    ],
    [
         InlineKeyboardButton(
-            text="✨ 𝐎𝐖𝐍𝐄𝐑 ✨", url=f"http://t.me/{OWNER_USERNAME}"),
+            text="✨ MASTER ✨", url=f"http://t.me/{OWNER_USERNAME}"),
         InlineKeyboardButton(
-            text="⚜️ 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ⚜️", url=f"https://t.me/{BOT_CHANNEL}"),
+            text="⚜️ UPDATES ⚜️", url=f"https://t.me/{BOT_CHANNEL}"),
     ],
     [  
-        InlineKeyboardButton(text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 👥", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="👥 SUPPORT GROUP 👥", url=f"https://t.me/{SUPPORT_CHAT}"),
     ], 
     
 ]
@@ -147,7 +147,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Tianabot.modules." + module_name)
+    imported_module = importlib.import_module("ScenarioRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -379,7 +379,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=f""" ℹ️ I'm {BOT_NAME}, a powerful group management bot built to help you manage your group easily. This Bots Created By PRINCE
+            text=f""" ℹ️ I'm {BOT_NAME}, a powerful group management bot built to help you manage your group easily. This Bots Created By AKKU
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -387,7 +387,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Tiana's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/prince301102/tiana-2.0).
+                 Here is the [💾Repository](https://github.com/IMAkashhazra/ProjectScenario).
                  If you have any question about masha, let us know at [SUPPORT CHAT](https://t.me/{SUPPORT_CHAT}).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -414,8 +414,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *TIANA BOT*
-                 \nHere is the [Source Code](https://GitHub.com/prince301102/tiana-2.0) .""",
+            text=""" Hi..🤗 I'm *SCENARIO BOT*
+                 \nHere is the [Source Code](https://GitHub.com/IMAkashhazra/ProjectScenario) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
