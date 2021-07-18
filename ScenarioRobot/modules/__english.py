@@ -1,7 +1,7 @@
-from Tianabot import telethn as tbot
+from ScenarioRobot import telethn as tbot
 import json
 import requests
-from Tianabot.events import register
+from ScenarioRobot.events import register
 from telethon import *
 from telethon.tl import functions
 import os
