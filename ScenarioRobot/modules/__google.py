@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from Tianabot import telethn as tbot
+from ScenarioRobot import telethn as tbot
 import glob
 import io
 import os
@@ -21,9 +21,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Tianabot import *
+from ScenarioRobot import *
 
-from Tianabot.events import register
+from ScenarioRobot.events import register
 
 opener = urllib.request.build_opener()
 useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36"
@@ -283,5 +283,5 @@ __help__ = """
  ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
  ❍ /reverse: Does a reverse image search of the media which it was replied to.
  ❍ Emcee <query>*:* Emcee answers the query
-  💡Ex: `Emcee where is India?`
+  💡Ex: `Scenario where is India?`
 """
