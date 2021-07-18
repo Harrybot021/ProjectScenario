@@ -1,5 +1,5 @@
-from Tianabot.events import register
-from Tianabot import telethn as tbot
+from ScenarioRobot.events import register
+from ScenarioRobot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
