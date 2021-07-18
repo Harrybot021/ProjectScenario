@@ -3,7 +3,7 @@ import aiohttp
 import emoji
 import requests
 import re
-from Tianabot import pbot as LYCIA
+from ScenarioRobot import pbot as LYCIA
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram import Client, filters
 from google_trans_new import google_translator
@@ -49,12 +49,12 @@ async def lycia(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "tiana")
-        result = result.replace("Eliza", "tiana")
-        result = result.replace("Hi~", "Hello Friend I Am @TIANA_PRINCE_BOT")
-        result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @PRINCE_3011")
-        result = result.replace("Have the control right.", "My Father Is @PRINCEBOTS")
-        result = result.replace("I was created by Lyciabot Team.", "I was created by @PRINCEBOTS.")
+        result = result.replace("Aco", "scenario")
+        result = result.replace("Eliza", "scenario")
+        result = result.replace("Hi~", "Hello Friend I Am @Offline_Walker")
+        result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @Offline_Walker")
+        result = result.replace("Have the control right.", "My Father Is @Offline_Walker")
+        result = result.replace("I was created by Lyciabot Team.", "I was created by @Offline_Walker.")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         red = result
@@ -112,12 +112,12 @@ async def lycia(client, message):
         result = response.text
         result = result.replace('{"cnt":"', "")
         result = result.replace('"}', "")
-        result = result.replace("Aco", "Tiana")
-        result = result.replace("Eliza", "Tiana")
-        result = result.replace("Hi~", "Hello Friend I Am @TIANA_PRINCE_BOT")
-        result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @PRINCE_3011")
-        result = result.replace("Have the control right.", "My Father Is @PRINCEBOTS")
-        result = result.replace("I was created by Lyciabot Team.", "I was created by @PRINCEBOTS.")
+        result = result.replace("Aco", "Scenario")
+        result = result.replace("Eliza", "Scenario")
+        result = result.replace("Hi~", "Hello Friend I Am @Offline_Walker")
+        result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @Offline_Walker")
+        result = result.replace("Have the control right.", "My Father Is @Offline_Walker")
+        result = result.replace("I was created by Lyciabot Team.", "I was created by @Offline_Walker.")
         result = result.replace("<a href=\\", "<a href =")
         result = result.replace("<\/a>", "</a>")
         red = result
@@ -185,12 +185,12 @@ async def redaura(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "tiana")
-    result = result.replace("Eliza", "@tiana_prince_bot")
-    result = result.replace("Hi~", "Hello Friend I Am @TIANA_PRINCE_BOT")
-    result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @PRINCE_3011")
-    result = result.replace("Have the control right.", "My Father Is @PRINCEBOTS")
-    result = result.replace("I was created by Lyciabot Team.", "I was created by @PRINCEBOTS.")
+    result = result.replace("Aco", "scenario")
+    result = result.replace("Eliza", "@Offline_Walker")
+    result = result.replace("Hi~", "Hello Friend I Am @Offline_Walker")
+    result = result.replace("My dear great botmaster, Lyciabot Team.", "Made By @Offline_Walker")
+    result = result.replace("Have the control right.", "My Father Is @Offline_Walker")
+    result = result.replace("I was created by Lyciabot Team.", "I was created by @Offline_Walker.")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     red = result
@@ -204,7 +204,7 @@ async def redaura(client, message):
 
 
 @LYCIA.on_message(
-    filters.regex("Tiana|tiana|TIANA")
+    filters.regex("Scenario|scenario|SCENARIO")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -264,12 +264,12 @@ async def redaura(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "tiana")
-    result = result.replace("Eliza", "@TIANA_PRINCE_BOT")
-    result = result.replace("Hi~", "Hello Friend I Am @TIANA_PRINCE_BOT")
-    result = result.replace("My dear great botmaster, Daisybot Team.", "Made By @PRINCE_3011")
-    result = result.replace("Have the control right.", "My Father Is @PRINCE_NETWORK")
-    result = result.replace("I was created by Lyciabot Team.", "I was created by @PRINCE_NETWORK.")
+    result = result.replace("Aco", "scenario")
+    result = result.replace("Eliza", "@Offline_Walker")
+    result = result.replace("Hi~", "Hello Friend I Am @Offline_Walker")
+    result = result.replace("My dear great botmaster, Daisybot Team.", "Made By @Offline_Walker")
+    result = result.replace("Have the control right.", "My Father Is @Offline_Walker")
+    result = result.replace("I was created by Lyciabot Team.", "I was created by @Offline_Walker.")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     red = result
