@@ -1,13 +1,13 @@
-from Tianabot import telethn as bot
-from Tianabot import telethn as tbot
-from Tianabot.events import register
+from ScenarioRobot import telethn as bot
+from ScenarioRobot import telethn as tbot
+from Scenario.events import register
 from telethon import *
 from telethon import Button, custom, events, functions
-from Tianabot.helper_extra.badmedia import is_nsfw
+from ScenarioRobot.helper_extra.badmedia import is_nsfw
 import requests
 import string 
 import random 
-from Tianabot.modules.sql_extended.nsfw_watch_sql import add_nsfwatch, rmnsfwatch, get_all_nsfw_enabled_chat, is_nsfwatch_indb
+from ScenarioRobot.modules.sql_extended.nsfw_watch_sql import add_nsfwatch, rmnsfwatch, get_all_nsfw_enabled_chat, is_nsfwatch_indb
 from telethon.tl.types import (
     ChannelParticipantsAdmins,
     ChatAdminRights,
