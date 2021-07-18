@@ -1,9 +1,9 @@
-from Tianabot.modules.sql.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from ScenarioRobot.modules.sql.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from Tianabot.events import register
-from Tianabot import telethn, OWNER_ID
+from ScenarioRobot.events import register
+from ScenarioRobot import telethn, OWNER_ID
 import os
 from telethon import *
 from telethon import Button, custom, events
@@ -145,7 +145,7 @@ async def job_open():
     for pro in chats:
         try:
             await telethn.send_message(
-              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Evlie**"
+              int(pro.chat_id), "06:00 Am, Group Is Opening.\n**Powered By Scenario**"
             )
             await telethn(
             functions.messages.EditChatDefaultBannedRightsRequest(
