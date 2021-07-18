@@ -1,7 +1,7 @@
-from Tianabot import pbot as app
-from Tianabot.pyrogramee.errors import capture_err
-from Tianabot.pyrogramee.json_prettify import json_prettify
-from Tianabot.pyrogramee.fetch import fetch
+from ScenarioRobot import pbot as app
+from ScenarioRobot.pyrogramee.errors import capture_err
+from ScenarioRobot.pyrogramee.json_prettify import json_prettify
+from ScenarioRobot.pyrogramee.fetch import fetch
 from pyrogram import filters
 
 
