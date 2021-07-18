@@ -2,9 +2,9 @@ from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
 
-from Tianabot import BOT_ID, MONGO_DB_URI
-from Tianabot import telethn as tbot
-from Tianabot.events import register
+from ScenarioRobot import BOT_ID, MONGO_DB_URI
+from ScenarioRobot import telethn as tbot
+from ScenarioRobot.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
@@ -394,7 +394,7 @@ async def stop(event):
 
 
 __help__ = """
-You can now send polls anonymously with Emcee
+You can now send polls anonymously with Scenario
 Here is how you can do it:
 **Parameters** -
  ❍ poll-id - a poll id consists of an 5 digit random integer, this id is automatically removed from the system when you stop your previous poll
