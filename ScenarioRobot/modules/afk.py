@@ -1,12 +1,12 @@
 import random, html
 
-from Tianabot import dispatcher
-from Tianabot.modules.disable import (
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from Tianabot.modules.sql import afk_sql as sql
-from Tianabot.modules.users import get_user_id
+from ScenarioRobot.modules.sql import afk_sql as sql
+from ScenarioRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
