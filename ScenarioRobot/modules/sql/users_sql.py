@@ -1,7 +1,7 @@
 import threading
 
-from Tianabot import dispatcher
-from Tianabot.modules.sql import BASE, SESSION
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
