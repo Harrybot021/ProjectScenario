@@ -9,7 +9,7 @@ from telethon import events
 
 from pymongo import MongoClient
 from ScenarioRobot import MONGO_DB_URI
-from Tianabot import telethn
+from ScenarioRobot import telethn
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
