@@ -1,2 +1,2 @@
-worker: python3 -m Tianabot
+worker: python3 -m ScenarioRobot
 ps:scale worker=1
