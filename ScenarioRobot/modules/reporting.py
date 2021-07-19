@@ -1,9 +1,9 @@
 import html
 
-from Tianabot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from Tianabot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.sql import reporting_sql as sql
+from ScenarioRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
