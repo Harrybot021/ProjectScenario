@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import Tianabot.modules.sql.locks_sql as sql
-from Tianabot import dispatcher, DRAGONS, LOGGER
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.chat_status import (
+import ScenarioRobot.modules.sql.locks_sql as sql
+from ScenarioRobot import dispatcher, DRAGONS, LOGGER
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.connection import connected
-from Tianabot.modules.sql.approve_sql import is_approved
-from Tianabot.modules.helper_funcs.alternate import send_message, typing_action
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.connection import connected
+from ScenarioRobot.modules.sql.approve_sql import is_approved
+from ScenarioRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
