@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import Tianabot.modules.sql.notes_sql as sql
-from Tianabot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.handlers import MessageHandlerChecker
-from Tianabot.modules.helper_funcs.chat_status import user_admin, connection_status
-from Tianabot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Tianabot.modules.helper_funcs.msg_types import get_note_type
-from Tianabot.modules.helper_funcs.string_handling import (
+import ScenarioRobot.modules.sql.notes_sql as sql
+from ScenarioRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from ScenarioRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from ScenarioRobot.modules.helper_funcs.msg_types import get_note_type
+from ScenarioRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
