@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import Tianabot.modules.sql.notes_sql as sql
-from Tianabot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from Tianabot.__main__ import DATA_IMPORT
-from Tianabot.modules.helper_funcs.chat_status import user_admin
-from Tianabot.modules.helper_funcs.alternate import typing_action
+import ScenarioRobot.modules.sql.notes_sql as sql
+from ScenarioRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from ScenarioRobot.__main__ import DATA_IMPORT
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin
+from ScenarioRobot.modules.helper_funcs.alternate import typing_action
 
-# from Tianabot.modules.rules import get_rules
-import Tianabot.modules.sql.rules_sql as rulessql
+# from ScenarioRobot.modules.rules import get_rules
+import ScenarioRobot.modules.sql.rules_sql as rulessql
 
-# from Tianabot.modules.sql import warns_sql as warnssql
-import Tianabot.modules.sql.blacklist_sql as blacklistsql
+# from ScenarioRobot.modules.sql import warns_sql as warnssql
+import ScenarioRobot.modules.sql.blacklist_sql as blacklistsql
 from Tianabot.modules.sql import disable_sql as disabledsql
 
-# from Tianabot.modules.sql import cust_filters_sql as filtersql
-# import Tianabot.modules.sql.welcome_sql as welcsql
-import Tianabot.modules.sql.locks_sql as locksql
-from Tianabot.modules.connection import connected
+# from ScenarioRobot.modules.sql import cust_filters_sql as filtersql
+# import ScenarioRobot.modules.sql.welcome_sql as welcsql
+import ScenarioRobot.modules.sql.locks_sql as locksql
+from ScenarioRobot.modules.connection import connected
 
 
 @run_async
