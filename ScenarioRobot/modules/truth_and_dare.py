@@ -1,9 +1,9 @@
 import html
 import random
-import Tianabot.modules.truth_and_dare_string as truth_and_dare_string
-from Tianabot import dispatcher
+import ScenarioRobot.modules.truth_and_dare_string as truth_and_dare_string
+from ScenarioRobot import dispatcher
 from telegram import ParseMode, Update, Bot
-from Tianabot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
