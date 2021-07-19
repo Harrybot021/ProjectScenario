@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from Tianabot import TIGERS, WOLVES, dispatcher
-from Tianabot.modules.helper_funcs.chat_status import (
+from ScenarioRobot import TIGERS, WOLVES, dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.sql import antiflood_sql as sql
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from Tianabot.modules.helper_funcs.string_handling import extract_time
-from Tianabot.modules.connection import connected
-from Tianabot.modules.helper_funcs.alternate import send_message
-from Tianabot.modules.sql.approve_sql import is_approved
+from ScenarioRobot.modules.helper_funcs.string_handling import extract_time
+from ScenarioRobot.modules.connection import connected
+from ScenarioRobot.modules.helper_funcs.alternate import send_message
+from ScenarioRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
