@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
 
-from Tianabot.modules.sql import SESSION, BASE
+from ScenarioRobot.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
