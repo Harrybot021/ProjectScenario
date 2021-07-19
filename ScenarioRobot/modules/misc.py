@@ -1,6 +1,6 @@
-from Tianabot.modules.helper_funcs.chat_status import user_admin
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot import dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
