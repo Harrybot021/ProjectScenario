@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from Tianabot import (
+from ScenarioRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from Tianabot import (
     dispatcher,
     sw,
 )
-from Tianabot.__main__ import STATS, TOKEN, USER_INFO
-import Tianabot.modules.sql.userinfo_sql as sql
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.sql.global_bans_sql import is_user_gbanned
-from Tianabot.modules.sql.afk_sql import is_afk, check_afk_status
-from Tianabot.modules.sql.users_sql import get_user_num_chats
-from Tianabot.modules.helper_funcs.chat_status import sudo_plus
-from Tianabot.modules.helper_funcs.extraction import extract_user
-from Tianabot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
+from ScenarioRobot.__main__ import STATS, TOKEN, USER_INFO
+import ScenarioRobot.modules.sql.userinfo_sql as sql
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.sql.global_bans_sql import is_user_gbanned
+from ScenarioRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from ScenarioRobot.modules.sql.users_sql import get_user_num_chats
+from ScenarioRobot.modules.helper_funcs.chat_status import sudo_plus
+from ScenarioRobot.modules.helper_funcs.extraction import extract_user
+from ScenarioRobot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nThe Disaster level of this person is 'Superior'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Emcee powerhouse'."
+        text += "\n\nThis user is member of 'Scenario powerhouse'."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\nThe Disaster level of this person is 'Legend'."
@@ -306,7 +306,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/EMCEE_UPDATES/3">?</a>]'.format(
+        text += ' [<a href="https://t.me/scenariobot_support/3">?</a>]'.format(
             bot.username
         )
 
@@ -544,7 +544,7 @@ When marked as AFK, any mentions will be replied to with a message to say you're
  ❍ /info*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
+ Come and see [HP System explained](https://t.me/scenariobot_support)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
