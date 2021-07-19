@@ -1,9 +1,9 @@
 import os
 from time import sleep
 
-from Tianabot import OWNER_ID, dispatcher
-from Tianabot.modules.helper_funcs.extraction import extract_user
-from Tianabot.modules.sql.users_sql import get_user_com_chats
+from ScenarioRobot import OWNER_ID, dispatcher
+from ScenarioRobot.modules.helper_funcs.extraction import extract_user
+from ScenarioRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters
