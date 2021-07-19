@@ -5,12 +5,12 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import Tianabot.modules.sql.approve_sql as sql
-from Tianabot import DRAGONS, dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.chat_status import user_admin
-from Tianabot.modules.helper_funcs.extraction import extract_user
-from Tianabot.modules.log_channel import loggable
+import ScenarioRobot.modules.sql.approve_sql as sql
+from ScenarioRobot import DRAGONS, dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin
+from ScenarioRobot.modules.helper_funcs.extraction import extract_user
+from ScenarioRobot.modules.log_channel import loggable
 
 
 @loggable
