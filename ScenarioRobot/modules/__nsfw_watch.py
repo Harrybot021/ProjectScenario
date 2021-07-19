@@ -1,6 +1,6 @@
 from ScenarioRobot import telethn as bot
 from ScenarioRobot import telethn as tbot
-from Scenario.events import register
+from ScenarioRobot.events import register
 from telethon import *
 from telethon import Button, custom, events, functions
 from ScenarioRobot.helper_extra.badmedia import is_nsfw
