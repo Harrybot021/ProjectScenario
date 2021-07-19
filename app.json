@@ -1,6 +1,6 @@
 {
       "name": "SCENARIO ROBOT",
-      "logo": "https://telegra.ph/file/bcd7b3dec21d1c2b2583a.png",
+      "logo": "https://telegra.ph/file/6c34166bae74ab68e72e6.jpg",
       "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
@@ -9,7 +9,7 @@
          "manager",
          "Emcee"
       ],   
-   "repository": "https://github.com/prince301102/tiana-2.0",
+   "repository": "https://github.com/IMAkashhazra/ProjectScenario",
    "addons": [
       {
          "options": {
@@ -22,7 +22,7 @@
       "ALIVE_PIC": {
          "description": "You can get Telegraph Link From Here @vtelegraphbot",
          "required": true,
-         "value": "https://telegra.ph/file/95b045156a7b4c2fe61f2.mp4"
+         "value": "https://telegra.ph/file/6c34166bae74ab68e72e6.jpg"
       },   
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
@@ -67,12 +67,12 @@
       "BOT_NAME": {
          "description": "Your Bot Name",
          "required": true,
-         "value": "TIANA"
+         "value": "SCENARIO"
       },   
       "BOT_CHANNEL": {
          "description": "Your Bot Channel username without the @",
          "required": true,
-         "value": "PRINCEBOTS"
+         "value": "scenariobot_support"
       },   
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
@@ -204,7 +204,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/prince_3011"
+         "value": "I Am Rich"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
