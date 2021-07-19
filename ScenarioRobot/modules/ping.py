@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Tianabot import StartTime, dispatcher
-from Tianabot.modules.helper_funcs.chat_status import sudo_plus
-from Tianabot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot import StartTime, dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import sudo_plus
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
