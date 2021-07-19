@@ -1,6 +1,6 @@
-from Tianabot.events import register
-from Tianabot import OWNER_ID, BOT_NAME
-from Tianabot import telethn as tbot
+from ScenarioRobot.events import register
+from ScenarioRobot import OWNER_ID, BOT_NAME
+from ScenarioRobot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -17,13 +17,13 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Tianabot/resources/logo/logo.jpg')
+    img = Image.open('./ScenarioRobot/resources/logo/logo.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./Tianabot/resources/font/Maghrib.ttf", 1000)
+    font = ImageFont.truetype("./ScenarioRobot/resources/font/Maghrib.ttf", 1000)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -33,11 +33,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
     fname2 = "LogobyTiana.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="MADE BY @TIANA_PRINCE_BOT")
+    await tbot.send_file(event.chat_id, fname2, caption="MADE BY @scenario_robot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @PrinceBotSupport, {e}')
+   await event.reply(f'Error Report @scenariobot_support, {e}')
 
 
 @register(pattern="^/wlogo ?(.*)")
@@ -53,13 +53,13 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Tianabot/resources/logo/logo1.jpg')
+    img = Image.open('./ScenarioRobot/resources/logo/logo1.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./Tianabot/resources/font/Chopsic.otf", 330)
+    font = ImageFont.truetype("./ScenarioRobot/resources/font/Chopsic.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -69,11 +69,11 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="white")
     fname2 = "LogobyTiana.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="MADE BY @TIANA_PRINCE_BOT")
+    await tbot.send_file(event.chat_id, fname2, caption="MADE BY @scenario_robot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @PrinceBotSupport, {e}')
+   await event.reply(f'Error Report @scenariobot_support, {e}')
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
