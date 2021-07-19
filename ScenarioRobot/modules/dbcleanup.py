@@ -1,9 +1,9 @@
 from time import sleep
 
-import Tianabot.modules.sql.global_bans_sql as gban_sql
-import Tianabot.modules.sql.users_sql as user_sql
-from Tianabot import DEV_USERS, OWNER_ID, dispatcher
-from Tianabot.modules.helper_funcs.chat_status import dev_plus
+import ScenarioRobot.modules.sql.global_bans_sql as gban_sql
+import ScenarioRobot.modules.sql.users_sql as user_sql
+from ScenarioRobot import DEV_USERS, OWNER_ID, dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
