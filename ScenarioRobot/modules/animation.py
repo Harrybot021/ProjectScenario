@@ -4,9 +4,9 @@ from typing import List
 from telegram import Update
 from telegram.ext import run_async,CallbackContext
 
-from Tianabot import dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.chat_status import user_admin
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin
 
 #sleep how many times after each edit in 'love' 
 EDIT_SLEEP = 1
@@ -268,11 +268,11 @@ def clockanimation(update: Update, context: CallbackContext):
 @run_async
 def policeanimation(update: Update, context: CallbackContext):
     bot, args = context.bot, context.args
-    msg = update.effective_message.reply_text('CALL TIANA POLICE') 
+    msg = update.effective_message.reply_text('CALL SCENARIO POLICE') 
     for x in range(EDIT_TIMES):
         msg.edit_text(police_ani[x%11])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('TIANA POLICE IS HERE')
+    msg.edit_text('SCENARIO POLICE IS HERE')
 
 
 
