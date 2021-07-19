@@ -1,14 +1,14 @@
 import html
 
-from Tianabot import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.chat_status import (
+from ScenarioRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Tianabot.modules.sql import cleaner_sql as sql
+from ScenarioRobot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
