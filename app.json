@@ -57,12 +57,12 @@
       "BOT_ID": {
          "description": "Your bot ID.. Use any other bot to get it.",
          "required": false,
-         "value": "1836395711"
+         "value": "12345678"
       },
       "BOT_USERNAME": {
          "description": "Your Bot username without the @",
          "required": true,
-         "value": "TIANA_PRINCE_BOT"
+         "value": "scenario_robot"
       },
       "BOT_NAME": {
          "description": "Your Bot Name",
