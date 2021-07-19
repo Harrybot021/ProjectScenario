@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from Tianabot import (
+from ScenarioRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,17 +13,17 @@ from Tianabot import (
     WOLVES,
     dispatcher,
 )
-from Tianabot.modules.helper_funcs.chat_status import (
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from Tianabot.modules.helper_funcs.extraction import extract_user
-from Tianabot.modules.log_channel import gloggable
+from ScenarioRobot.modules.helper_funcs.extraction import extract_user
+from ScenarioRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
-from Tianabot.events import register
+from ScenarioRobot.events import register
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "Tianabot/elevated_users.json")
 
@@ -540,7 +540,7 @@ def devlist(update: Update, context: CallbackContext):
         "<code>Gathering intel..</code>", parse_mode=ParseMode.HTML
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Emcee powerhouse Members ⚡️:</b>\n"
+    reply = "<b>Scenario powerhouse Members ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
