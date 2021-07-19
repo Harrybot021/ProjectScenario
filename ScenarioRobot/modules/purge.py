@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from Tianabot import telethn
-from Tianabot.modules.helper_funcs.telethn.chatstatus import (
+from ScenarioRobot import telethn
+from ScenarioRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
