@@ -4,8 +4,8 @@
 
 from gogoanimeapi import gogoanime as anime
 from telethon import types, Button, events
-from Tianabot import telethn as GogoAnime
-from Tianabot.events import register
+from ScenarioRobot import telethn as GogoAnime
+from ScenarioRobot.events import register
 
 @GogoAnime.on(events.NewMessage(pattern="^/gogo ?(.*)"))
 async def gogo(event):
