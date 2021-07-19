@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import Tianabot.modules.sql.global_bans_sql as sql
-from Tianabot.modules.sql.users_sql import get_user_com_chats
-from Tianabot import (
+import ScenarioRobot.modules.sql.global_bans_sql as sql
+from ScenarioRobot.modules.sql.users_sql import get_user_com_chats
+from ScenarioRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from Tianabot import (
     sw,
     dispatcher,
 )
-from Tianabot.modules.helper_funcs.chat_status import (
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Tianabot.modules.helper_funcs.extraction import (
+from ScenarioRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Tianabot.modules.helper_funcs.misc import send_to_list
+from ScenarioRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
