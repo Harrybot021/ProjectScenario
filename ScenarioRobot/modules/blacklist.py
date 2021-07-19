@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import Tianabot.modules.sql.blacklist_sql as sql
-from Tianabot import dispatcher, LOGGER
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Tianabot.modules.helper_funcs.extraction import extract_text
-from Tianabot.modules.helper_funcs.misc import split_message
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.warns import warn
-from Tianabot.modules.helper_funcs.string_handling import extract_time
-from Tianabot.modules.connection import connected
-from Tianabot.modules.sql.approve_sql import is_approved
-from Tianabot.modules.helper_funcs.alternate import send_message, typing_action
+import ScenarioRobot.modules.sql.blacklist_sql as sql
+from ScenarioRobot import dispatcher, LOGGER
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from ScenarioRobot.modules.helper_funcs.extraction import extract_text
+from ScenarioRobot.modules.helper_funcs.misc import split_message
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.warns import warn
+from ScenarioRobot.modules.helper_funcs.string_handling import extract_time
+from ScenarioRobot.modules.connection import connected
+from ScenarioRobot.modules.sql.approve_sql import is_approved
+from ScenarioRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
