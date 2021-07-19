@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import Tianabot.modules.sql.users_sql as sql
-from Tianabot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from Tianabot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from Tianabot.modules.sql.users_sql import get_all_users
+import ScenarioRobot.modules.sql.users_sql as sql
+from ScenarioRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from ScenarioRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
