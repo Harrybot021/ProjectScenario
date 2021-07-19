@@ -1,6 +1,6 @@
 import requests
-from Tianabot import dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
