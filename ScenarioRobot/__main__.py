@@ -113,7 +113,7 @@ buttons = [
     
 ]
 
-ALIVE_IMG=f"https://telegra.ph/file/a04015498662d1ec78f08.mp4
+ALIVE
 
 HELP_STRINGS = f"""
 Hey There! My Name is {BOT_NAME}
