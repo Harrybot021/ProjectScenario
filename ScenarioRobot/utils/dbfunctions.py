@@ -1,4 +1,4 @@
-from Tianabot import db
+from ScenarioRobot import db
 from typing import Dict, List, Union
 
 karmadb = db.karma
