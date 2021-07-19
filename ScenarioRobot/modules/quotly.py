@@ -9,7 +9,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
 
-from Tianabot.events import register
+from ScenarioRobot.events import register
 
 COLORS = [
     "#F07975",
