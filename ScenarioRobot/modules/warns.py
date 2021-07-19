@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from Tianabot import TIGERS, WOLVES, dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.chat_status import (
+from ScenarioRobot import TIGERS, WOLVES, dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from Tianabot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from Tianabot.modules.helper_funcs.extraction import (
+from ScenarioRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Tianabot.modules.helper_funcs.filters import CustomFilters
-from Tianabot.modules.helper_funcs.misc import split_message
-from Tianabot.modules.helper_funcs.string_handling import split_quotes
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.sql import warns_sql as sql
+from ScenarioRobot.modules.helper_funcs.filters import CustomFilters
+from ScenarioRobot.modules.helper_funcs.misc import split_message
+from ScenarioRobot.modules.helper_funcs.string_handling import split_quotes
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from Tianabot.modules.sql.approve_sql import is_approved
+from ScenarioRobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
