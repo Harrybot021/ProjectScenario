@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
           update.effective_message.reply_video(
-              "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+              "I'm awake alread".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
