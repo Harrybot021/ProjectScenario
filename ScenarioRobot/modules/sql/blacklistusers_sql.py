@@ -1,6 +1,6 @@
 import threading
 
-from ScenarioRobot.modules.sql import BASE, SESSION
+from Tianabot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText
 
 
