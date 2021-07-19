@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from Tianabot import dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, Message
 from telegram.ext import CallbackContext, run_async
 
