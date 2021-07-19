@@ -113,7 +113,7 @@ buttons = [
     
 ]
 
-TIANA_IMG = f"{ALIVE_PIC}"
+ALIVE_PIC = (https://telegra.ph/file/a04015498662d1ec78f08.mp4)
 
 HELP_STRINGS = f"""
 Hey There! My Name is {BOT_NAME}
@@ -244,7 +244,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
           update.effective_message.reply_video(
-                TIANA_IMG, caption= "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+              "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -662,7 +662,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1663464481 and DONATION_LINK:
+        if OWNER_ID != 1800845035 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
