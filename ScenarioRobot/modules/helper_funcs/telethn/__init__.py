@@ -1,4 +1,4 @@
-from Tianabot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
+from ScenarioRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES, telethn
 
 IMMUNE_USERS = DRAGONS + WOLVES + DEMONS + TIGERS + DEV_USERS
 
