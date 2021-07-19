@@ -21,7 +21,7 @@ from ScenarioRobot.helper_extra.admin_rights import (
     user_can_changeinfo,
 )
 
-from Tianabot.modules.helper_funcs.extraction import (
+from ScenarioRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
