@@ -1,6 +1,6 @@
-from Tianabot import dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.alternate import typing_action
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
