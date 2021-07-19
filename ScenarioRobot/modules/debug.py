@@ -5,8 +5,8 @@ from telethon import events
 from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
-from Tianabot import telethn, dispatcher
-from Tianabot.modules.helper_funcs.chat_status import dev_plus
+from ScenarioRobot import telethn, dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import dev_plus
 
 DEBUG_MODE = False
 
