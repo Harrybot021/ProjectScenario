@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import Tianabot.modules.sql.welcome_sql as sql
-import Tianabot
-from Tianabot import (
+import ScenarioRobot.modules.sql.welcome_sql as sql
+import ScenarioRobot
+from ScenarioRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from Tianabot import (
     dispatcher,
     JOIN_LOGGER
 )
-from Tianabot.modules.helper_funcs.chat_status import (
+from ScenarioRobot.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from Tianabot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Tianabot.modules.helper_funcs.msg_types import get_welcome_type
-from Tianabot.modules.helper_funcs.string_handling import (
+from ScenarioRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from ScenarioRobot.modules.helper_funcs.msg_types import get_welcome_type
+from ScenarioRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.sql.global_bans_sql import is_user_gbanned
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
