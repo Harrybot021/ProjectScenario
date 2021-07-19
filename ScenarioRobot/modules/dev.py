@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import Tianabot
+import ScenarioRobot
 
-from Tianabot import dispatcher
-from Tianabot.modules.helper_funcs.chat_status import dev_plus
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,7 +18,7 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {Tianabot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {ScenarioRobot.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
         Tianabot.ALLOW_CHATS = True
