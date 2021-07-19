@@ -16,7 +16,7 @@ import ScenarioRobot.modules.sql.rules_sql as rulessql
 
 # from ScenarioRobot.modules.sql import warns_sql as warnssql
 import ScenarioRobot.modules.sql.blacklist_sql as blacklistsql
-from Tianabot.modules.sql import disable_sql as disabledsql
+from ScenarioRobot.modules.sql import disable_sql as disabledsql
 
 # from ScenarioRobot.modules.sql import cust_filters_sql as filtersql
 # import ScenarioRobot.modules.sql.welcome_sql as welcsql
