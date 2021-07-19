@@ -6,8 +6,8 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
-from Tianabot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
-from Tianabot.events import register
+from ScenarioRobot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
+from ScenarioRobot.events import register
 
 # =================== CONSTANT ===================
 
