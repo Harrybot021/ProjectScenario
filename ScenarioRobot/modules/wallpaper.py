@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from Tianabot import SUPPORT_CHAT, WALL_API, dispatcher
-from Tianabot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
