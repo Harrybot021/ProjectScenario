@@ -1,5 +1,5 @@
-from Tianabot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from Tianabot import DRAGONS
+from ScenarioRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from ScenarioRobot import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
