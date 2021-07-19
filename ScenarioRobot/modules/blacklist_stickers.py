@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import Tianabot.modules.sql.blsticker_sql as sql
-from Tianabot import LOGGER, dispatcher
-from Tianabot.modules.connection import connected
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.alternate import send_message
-from Tianabot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Tianabot.modules.helper_funcs.misc import split_message
-from Tianabot.modules.helper_funcs.string_handling import extract_time
+import ScenarioRobot.modules.sql.blsticker_sql as sql
+from ScenarioRobot import LOGGER, dispatcher
+from ScenarioRobot.modules.connection import connected
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.alternate import send_message
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from ScenarioRobot.modules.helper_funcs.misc import split_message
+from ScenarioRobot.modules.helper_funcs.string_handling import extract_time
 
-from Tianabot.modules.log_channel import loggable
-from Tianabot.modules.warns import warn
+from ScenarioRobot.modules.log_channel import loggable
+from ScenarioRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
