@@ -1,0 +1,1 @@
+from ScenarioRobot import telethn
