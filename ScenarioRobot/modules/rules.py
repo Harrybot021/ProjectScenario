@@ -1,9 +1,9 @@
 from typing import Optional
 
-import Tianabot.modules.sql.rules_sql as sql
-from Tianabot import dispatcher
-from Tianabot.modules.helper_funcs.chat_status import user_admin
-from Tianabot.modules.helper_funcs.string_handling import markdown_parser
+import ScenarioRobot.modules.sql.rules_sql as sql
+from ScenarioRobot import dispatcher
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin
+from ScenarioRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
