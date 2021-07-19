@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from Tianabot import dispatcher, LOGGER, DRAGONS
-from Tianabot.modules.disable import DisableAbleCommandHandler
-from Tianabot.modules.helper_funcs.handlers import MessageHandlerChecker
-from Tianabot.modules.helper_funcs.chat_status import user_admin
-from Tianabot.modules.helper_funcs.extraction import extract_text
-from Tianabot.modules.helper_funcs.filters import CustomFilters
-from Tianabot.modules.helper_funcs.misc import build_keyboard_parser
-from Tianabot.modules.helper_funcs.msg_types import get_filter_type
-from Tianabot.modules.helper_funcs.string_handling import (
+from ScenarioRobot import dispatcher, LOGGER, DRAGONS
+from ScenarioRobot.modules.disable import DisableAbleCommandHandler
+from ScenarioRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from ScenarioRobot.modules.helper_funcs.chat_status import user_admin
+from ScenarioRobot.modules.helper_funcs.extraction import extract_text
+from ScenarioRobot.modules.helper_funcs.filters import CustomFilters
+from ScenarioRobot.modules.helper_funcs.misc import build_keyboard_parser
+from ScenarioRobot.modules.helper_funcs.msg_types import get_filter_type
+from ScenarioRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Tianabot.modules.sql import cust_filters_sql as sql
+from ScenarioRobot.modules.sql import cust_filters_sql as sql
 
-from Tianabot.modules.connection import connected
+from ScenarioRobot.modules.connection import connected
 
-from Tianabot.modules.helper_funcs.alternate import send_message, typing_action
+from ScenarioRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
