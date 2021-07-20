@@ -80,12 +80,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 
-PM_START_TEXT = f"""Hello, My Name is {BOT_NAME}
+PM_START_TEXT = f"""Hello, I'm {BOT_NAME}
 
-Hey , I am a Group Manager,
+Hey , I am a Group Management Robot.
 Made specially for Managing Groups.
 
-This Probot was Created by [AKKU](https://t.me/Offline_Walker)
+This Robot Owner [AKKU](https://t.me/Offline_Walker)
 Click /help or use button below to find out more about how to use me to my full potential."""
 
 buttons = [
@@ -95,7 +95,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="⚡ABOUT", callback_data="masha_"),
-        InlineKeyboardButton(text="⚜️HELP", callback_data="help_back"),
+        InlineKeyboardButton(text="💥HELP", callback_data="help_back"),
     ],
    [
         InlineKeyboardButton(
@@ -108,7 +108,7 @@ buttons = [
             text="⚜️ UPDATES ⚜️", url=f"https://t.me/{BOT_CHANNEL}"),
     ],
     [  
-        InlineKeyboardButton(text="👥 SUPPORT GROUP 👥", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="👥 SUPPORT CHAT 👥", url=f"https://t.me/{SUPPORT_CHAT}"),
     ], 
     
 ]
@@ -116,9 +116,9 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-Hey There! My Name is {BOT_NAME}
+Hey There! I'm {BOT_NAME}
 
-I'm a Heroine For Fun and help admins to manage their groups! Have a look at the following for an idea of some of the things I can help you with.
+I'm a Little Queen For Fun and help admins to manage their groups! Have a look at the following for an idea of some of the things I can help you with.
 
 • Main commands available:
  • /help: PM's you this message.
