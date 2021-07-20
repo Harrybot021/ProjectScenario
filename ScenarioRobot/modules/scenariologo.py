@@ -67,7 +67,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="white")
-    fname2 = "LogobyTiana.png"
+    fname2 = "Scenario.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="MADE BY @scenario_robot")
     if os.path.exists(fname2):
