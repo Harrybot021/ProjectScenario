@@ -27,5 +27,5 @@ if '%errorlevel%' NEQ '0' (
 :--------------------------------------
 :: your commands begin from this point.
 :: stops the service and then starts it 
-net stop Tianabot
-net start Tianabot
+net stop ScenarioRobot
+net start ScenarioRobot
